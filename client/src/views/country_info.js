@@ -3,13 +3,15 @@ const CountryInfo = function () {
 }
 
 CountryInfo.prototype.render = function (country) {
-  const ul = document.querySelector('#country-info');
-  const capital = document.createElement('li');
-  const population = document.createElement('li')
-  capital.innerText = `Capital city: ${country.capital}`
-  population.innerText = `Population:  ${country.population}`;
-  capital.appendChild(population);
-  ul.appendChild(capital);
+
+  const ul = document.querySelector.("#country-info");
+  const liName = createElement('li');
+  liName.innerText = country.name;
+  const liCapital = createElement('li');
+  liCapital.innerText = country.capital;
+  ul.appendChild(liName);
+  ul.appendChild(liCapital);
+
 }
 
 CountryInfo.prototype.createListItem = function (label, content) {

@@ -143,28 +143,7 @@ module.exports = CountriesSelect;
 /* 3 */
 /***/ (function(module, exports) {
 
-const CountryInfo = function () {
-  this.ul = document.querySelector('#country-info');
-}
-
-CountryInfo.prototype.render = function (country) {
-  const ul = document.querySelector('#country-info');
-  const capital = document.createElement('li');
-  const population = document.createElement('li')
-  capital.innerText = `Capital city: ${country.capital}`
-  population.innerText = `Population:  ${country.population}`;
-  capital.appendChild(population);
-  ul.appendChild(capital);
-}
-
-CountryInfo.prototype.createListItem = function (label, content) {
-  const li = document.createElement('li');
-  li.innerText = `${ label }: ${ content }`;
-  return li;
-}
-
-module.exports = CountryInfo;
-
+throw new Error("Module parse failed: /Users/petes/codeclan_work/week_13/day_4/REST-countries-app/client/src/views/country_info.js Unexpected token (7:36)\nYou may need an appropriate loader to handle this file type.\n| CountryInfo.prototype.render = function (country) {\n| \n|   const ul = document.querySelector.(\"#country-info\");\n|   const liName = createElement('li');\n|   liName.innerText = country.name;");
 
 /***/ }),
 /* 4 */
